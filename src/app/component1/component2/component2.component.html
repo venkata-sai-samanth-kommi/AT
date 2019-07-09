@@ -1,0 +1,10 @@
+<div>
+    <input type="text" #comp2input [(ngModel)]="comp2input2way" (input)="changeViewChildVal()"/>
+    <button type="button" (click)="emitToC1()">send to component1</button>
+    <br><br>
+    <label>input value through 2way binding : {{comp2input2way}}</label>
+    <br/><br>
+    <label>input value through view child : {{comp2inputvaluethroughViewChild}}</label>
+    <br/><br>
+    <label>value recieved from component1 : {{valueFromC1}}</label>
+</div>

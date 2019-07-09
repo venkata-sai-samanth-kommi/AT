@@ -1,0 +1,11 @@
+<div>
+    <p>component1</p>
+    <hr>
+    <p>component2</p>
+    <app-component2 (EmitterToC1)="getVal($event)" [valueFromC1]="valToSend"></app-component2>
+    <hr>
+    <input type="text" #input/>
+    <button (click)="sendToC2()">send to component2</button>
+    <br/>
+    <label>value received from component2 is : {{valRecFromC2}}</label>
+</div>
